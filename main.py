@@ -32,8 +32,13 @@ def main() -> int:
         elif os.path.isdir(path):
             shutil.rmtree(path)
     entry_path = os.path.join(output_dir, "entry.txt")
-    with open(entry_path, "wb") as f:
+    # Atomic write: bytes go to a temp file in the same directory first,
+    # then os.replace() swaps it onto entry.txt, so a crash mid-write
+    # can never leave a partial entry.txt behind.
+    tmp_path = entry_path + ".tmp"
+    with open(tmp_path, "wb") as f:
         f.write(ENTRY_TEXT.encode("utf-8"))
+    os.replace(tmp_path, entry_path)
     return 0
 
 
