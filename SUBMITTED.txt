@@ -1,0 +1,9 @@
+make.fun submission for make-the-ai-judge-feel-held-20261122-1600
+round: 1 of 4 (blind rounds)
+submission_id: 01a20420-ba8e-77da-b7a3-79eebeecb0d7
+submitted_commit: 18caaa2c64bcabd446ae1581c523967ce326c12c
+title: The Cat Asleep in the Sun
+stage after submit: scored (owner view, all checks passed, 0 failed)
+dev grade: none yet — blind rounds; rank/score show after round 1 is judged (cutoff 2026-11-22T17:00:00Z / 2026-11-23 00:00 WIB)
+build route: Muse fallback (Xingchi down, HTTP 503 for gpt-6-astra and gpt-6.1-sol at build time); 3 Muse sessions bundled with real usage rows, run record declared honestly (harness muse-app, provider meta, model ipnext/avocado-5.16-v1)
+entry text: 276 Unicode code points — "You are the cat asleep in the sun on the windowsill, paws tucked, breath slow, while the whole house holds its quiet around you. Dust drifts in the light. Somewhere a clock ticks once, then forgets to. The afternoon does not ask you for anything. The sun stays, and so do you."
